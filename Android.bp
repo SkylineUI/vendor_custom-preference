@@ -1,6 +1,6 @@
 android_library {
 
-    name: "custom-preference",
+    name: "VendorSupport-Libs",
 
     optimize: {
         enabled: false,
@@ -9,12 +9,17 @@ android_library {
     srcs: ["src/**/*.java", "src/**/*.kt"],
 
     static_libs: [
-        "androidx.core_core",
-        "androidx.preference_preference",
-        "androidx.appcompat_appcompat",
-        "androidx.recyclerview_recyclerview",
+         "androidx-constraintlayout_constraintlayout",
+         "androidx.annotation_annotation",
+         "androidx.core_core",
+         "androidx.dynamicanimation_dynamicanimation",
+         "androidx.preference_preference",
+         "androidx.appcompat_appcompat",
+         "androidx.recyclerview_recyclerview",
+         "androidx.viewpager_viewpager"
     ],
 
     resource_dirs: ["res"],
+    min_sdk_version: "27",
 
 }
