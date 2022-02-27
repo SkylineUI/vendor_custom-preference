@@ -6,7 +6,7 @@ android_library {
         enabled: false,
     },
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/com/skylineui/support/**/*.java", "src/com/skylineui/support/**/*.kt"],
 
     static_libs: [
          "androidx-constraintlayout_constraintlayout",
@@ -17,7 +17,14 @@ android_library {
          "androidx.appcompat_appcompat",
          "androidx.recyclerview_recyclerview",
          "androidx.viewpager_viewpager",
-         "SettingsLibMainSwitchPreference"
+         "SettingsLibMainSwitchPreference",
+         "kotlinx_coroutines_android",
+         "com.google.android.material_material",
+         "kotlinx_coroutines",
+         "androidx.core_core-ktx",
+         "androidx.lifecycle_lifecycle-runtime-ktx",
+         "SettingsLibSettingsTheme",
+        "SettingsLibTwoTargetPreference",
     ],
 
     resource_dirs: ["res"],
