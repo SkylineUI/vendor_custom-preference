@@ -58,6 +58,9 @@ public class SystemSettingListPreference extends ListPreference {
         super.setSummary(summary);
     }
 
+    public int getIntValue(int defValue) { return getValue() == null ? defValue : Integer.valueOf(getValue());
+    }
+
     @Override
     protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
         // This is what default ListPreference implementation is doing without respecting
